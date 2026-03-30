@@ -39,7 +39,7 @@ export const Header = () => {
     );
   };
   return (
-    <header className="h-15 w-full py-4 px-4 flex items-center justify-items-start bg-gray-950 md:h-20 md:justify-center relative">
+    <header className="h-15 w-full py-4 px-4 flex items-center justify-items-start md:h-20 md:justify-center relative">
       <nav aria-label="Navegação principal desktop" className="hidden md:block">
         <ul className="flex gap-8">
           {navLinks.map((item, index) => (

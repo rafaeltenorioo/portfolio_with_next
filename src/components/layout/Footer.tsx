@@ -26,7 +26,7 @@ const listLink: LinkFooterProps[] = [
 
 export const Footer = () => {
   return (
-    <footer className="w-full h-25 px-10 py-5 flex justify-around items-center bg-gray-950">
+    <footer className="w-full h-25 px-10 py-5 flex justify-around items-center">
       <div className="flex gap-10">
         {listLink.map((item, i) => (
           <a

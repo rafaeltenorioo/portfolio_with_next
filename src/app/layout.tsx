@@ -4,6 +4,8 @@ import { inter } from "../components/ui/fonts";
 import { Header } from "../components/layout/Header";
 import { Footer } from "../components/layout/Footer";
 
+import { cn } from "@//lib/utils";
+
 type Props = {
   children: React.ReactNode;
 };
@@ -14,8 +16,8 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: Props) {
   return (
-    <html lang="pt-BR">
-      <body className={`${inter.className} bg-black`}>
+    <html lang="pt-BR" className={cn("font-sans")}>
+      <body className={`${inter.className} bg-black overflow-x-hidden`}>
         <Header />
         {children}
         <Footer />
